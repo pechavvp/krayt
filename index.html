@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Krayt</title>
 </head>
 <body>
@@ -32,11 +33,35 @@
             <h1 class="intro-block__title"><span class="intro-block__title_orange">Revolutionary</span> co-working space to realize your innovation</h1>
             <p class="intro-block__text">In frispes, we spearhead new initiatives and provide mentorship to a new startup, and help grow their opportunities in key local, regional and global markets</p>
         </div>
-        <div class="intro-block__image-container">
-            <img src="./assets/img/intro-img.png" alt="Space">
+        <div class="intro-block__slider swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="intro-block__slider-image-container">
+                        <img class="intro-block__slider-image" src="./assets/img/intro-img-1.png" alt="Space">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro-block__slider-image-container">
+                        <img class="intro-block__slider-image" src="./assets/img/intro-img-2.jpg" alt="Space">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro-block__slider-image-container">
+                        <img class="intro-block__slider-image" src="./assets/img/intro-img-3.jpg" alt="Space">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="intro-block__slider-image-container">
+                        <img class="intro-block__slider-image" src="./assets/img/intro-img-4.jpg" alt="Space">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="spaces-block wrapper">
+    <section class="spaces-block wrapper swiper">
         <div class="spaces-block__head">
             <h2 class="spaces-block__title">Our Spaces</h2>
             <p class="spaces-block__subtitle">Our space is designed to give you a different experience when working with your team or personally</p>
@@ -45,45 +70,59 @@
                 <button class="arrow-nav-block__next-btn"><img class="arrow-nav-block__next-btn-img" src="./assets/img/spaces-nav-next.png" alt="Next"></button>
             </div>
         </div>
-        <div class="spaces-block__cards">
-            <div class="spaces-block__card-item">
-                <div class="spaces-block__card-image-container">
-                    <img src="./assets/img/space-card1.png" alt="Space" class="spaces-block__card-image">
-                    <a class="spaces-block__card-link" href="">
-                        <img class="spaces-block__card-link-icon" src="./assets/img/arrow-right.png" alt="Click">
-                    </a>
-                </div>
-                <p class="spaces-block__card-text">Working with team</p>
-            </div>
-            <div class="spaces-block__card-main">
-                <img src="./assets/img/stripes.png" alt="Stripes" class="spaces-block__card-main-stripes">
-                <div class="spaces-block__card-main-content">
-                    <div class="spaces-block__card-main-container">
-                        <h3 class="spaces-block__card-main-title">Private Space</h3>
-                        <p class="spaces-block__card-main-text">Comfortable space, Full speed <br>wifi, Free coffe & Snack <br>and many more</p>
+        <div class="spaces-block__cards swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="spaces-block__card-item">
+                        <div class="spaces-block__card-image-container">
+                            <img src="./assets/img/space-card1.png" alt="Space" class="spaces-block__card-image">
+                            <a class="spaces-block__card-link" href="">
+                                <img class="spaces-block__card-link-icon" src="./assets/img/arrow-right.png" alt="Click">
+                            </a>
+                        </div>
+                        <p class="spaces-block__card-text">Working with team</p>
                     </div>
                 </div>
-                <a class="spaces-block__card-main-link" href="">
-                    <p class="spaces-block__card-main-link-text">Check avaibility</p>
-                    <img class="spaces-block__card-main-link-icon" src="./assets/img/arrow-right.png" alt="Click">
-                </a>
-            </div>
-            <div class="spaces-block__card-item">
-                <div class="spaces-block__card-image-container">
-                    <img src="./assets/img/space-card2.png" alt="Space" class="spaces-block__card-image">
-                    <a class="spaces-block__card-link" href="">
-                        <img class="spaces-block__card-link-icon" src="./assets/img/arrow-right.png" alt="Click">
-                    </a>
+                <div class="swiper-slide">
+                    <div class="spaces-block__card-item spaces-block__card-main">
+                        <img src="./assets/img/stripes.png" alt="Stripes" class="spaces-block__card-main-stripes">
+                        <div class="spaces-block__card-main-content">
+                            <div class="spaces-block__card-main-container">
+                                <h3 class="spaces-block__card-main-title">Private Space</h3>
+                                <p class="spaces-block__card-main-text">Comfortable space, Full speed <br>wifi, Free coffe & Snack <br>and many more</p>
+                            </div>
+                        </div>
+                        <a class="spaces-block__card-main-link" href="">
+                            <p class="spaces-block__card-main-link-text">Check avaibility</p>
+                            <img class="spaces-block__card-main-link-icon" src="./assets/img/arrow-right.png" alt="Click">
+                        </a>
+                    </div>
                 </div>
-                <p class="spaces-block__card-text">Custom Office</p>
-            </div>
+                <div class="swiper-slide">
+                    <div class="spaces-block__card-item">
+                        <div class="spaces-block__card-image-container">
+                            <img src="./assets/img/space-card2.png" alt="Space" class="spaces-block__card-image">
+                            <a class="spaces-block__card-link" href="">
+                                <img class="spaces-block__card-link-icon" src="./assets/img/arrow-right.png" alt="Click">
+                            </a>
+                        </div>
+                        <p class="spaces-block__card-text">Custom Office</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="spaces-block__card-item">
+                        <div class="spaces-block__card-image-container spaces-block__card-image-container_last">
+                            <img src="./assets/img/space-card3.jpg" alt="Space" class="spaces-block__card-image">
+                            <a class="spaces-block__card-link" href="">
+                                <img class="spaces-block__card-link-icon" src="./assets/img/arrow-right.png" alt="Click">
+                            </a>
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="spaces-block__nav">
             <div class="spaces-block__nav-container">
-                <hr class="spaces-block__nav-line">
-                <hr class="spaces-block__nav-part">
             </div>
-            01 /<span class="spaces-block__nav_gray">04</span>
+            0<span class="spaces-block__nav-index">1</span> /<span class="spaces-block__nav_gray">04</span>
         </div>
     </section>
     <section class="why-block wrapper">
@@ -144,44 +183,50 @@
         <h2 class="facilities-block__title">All facilities are designed to meet all your needs</h2>
         <div class="facilities-block__info">
             <ul class="facilities-block__list">
-                <li class="facilities-block__item"><button class="facilities-block__item-btn">Spacious parking area</button></li>
-                <li class="facilities-block__item"><button class="facilities-block__item-btn">Comfortable spaces</button></li>
-                <li class="facilities-block__item"><button class="facilities-block__item-btn facilities-block__item-btn_active">Cozy cafe</button></li>
-                <li class="facilities-block__item"><button class="facilities-block__item-btn">Child playground</button></li>
-                <li class="facilities-block__item"><button class="facilities-block__item-btn">Outdoor spaces</button></li>
+                <li class="facilities-block__item"><button data-index="1" class="facilities-block__item-btn">Spacious parking area</button></li>
+                <li class="facilities-block__item"><button data-index="2" class="facilities-block__item-btn">Comfortable spaces</button></li>
+                <li class="facilities-block__item"><button data-index="3" class="facilities-block__item-btn facilities-block__item-btn_active">Cozy cafe</button></li>
+                <li class="facilities-block__item"><button data-index="4" class="facilities-block__item-btn">Child playground</button></li>
+                <li class="facilities-block__item"><button data-index="5" class="facilities-block__item-btn">Outdoor spaces</button></li>
             </ul>
             <div class="facilities-block__image-container">
-                <img class="facilities-block__image" src="./assets/img/facilities-image.png" alt="">
+                <img class="facilities-block__image" src="./assets/img/facilities-image3.png" alt="">
             </div>
         </div>
     </section>
-    <section class="gallery-block">
-        <div class="gallery-block__head wrapper">
+    <section class="gallery-block wrapper swiper">
+        <div class="gallery-block__head">
             <div class="gallery-block__title-container">
                 <p class="gallery-block__subtitle">Frispes gallery</p>
                 <h2 class="gallery-block__title">Immersive beautiful <br>co-working space gallery</h2>
-                <div class="gallery-block__nav arrow-nav-block">
+                <div class="gallery-block__nav-arrows arrow-nav-block">
                     <button class="arrow-nav-block__prev-btn"><img class="arrow-nav-block__prev-btn-img" src="./assets/img/spaces-nav-prev.png" alt="Prev"></button>
                     <button class="arrow-nav-block__next-btn"><img class="arrow-nav-block__next-btn-img" src="./assets/img/spaces-nav-next.png" alt="Next"></button>
                 </div>
             </div>
         </div>
-        <div class="gallery-block__list-container wrapper">
-            <ul class="gallery-block__list">
-                <li class="gallery-block__item">
-                    <img class="gallery-block__item-img" src="./assets/img/gallery-img1.png" alt="Gallery">
-                </li>
-                <li class="gallery-block__item gallery-block__item_main">
-                    <img class="gallery-block__item-img" src="./assets/img/gallery-img2.png" alt="Gallery">
-                </li>
-                <li class="gallery-block__item">
-                    <img class="gallery-block__item-img" src="./assets/img/gallery-img3.png" alt="Gallery">
-                </li>
-                <li class="gallery-block__item">
-                    <img class="gallery-block__item-img" src="./assets/img/gallery-img4.png" alt="Gallery">
-                </li>
+            <ul class="gallery-block__list swiper-wrapper">
+                <div class="swiper-slide">
+                    <li class="gallery-block__item">
+                        <img class="gallery-block__item-img" src="./assets/img/gallery-img2.png" alt="Gallery">
+                    </li>
+                </div>
+                <div class="swiper-slide">
+                    <li class="gallery-block__item">
+                        <img class="gallery-block__item-img" src="./assets/img/gallery-img3.png" alt="Gallery">
+                    </li>
+                </div>
+                <div class="swiper-slide">
+                    <li class="gallery-block__item">
+                        <img class="gallery-block__item-img" src="./assets/img/gallery-img4.png" alt="Gallery">
+                    </li>
+                </div>
+                <div class="swiper-slide">
+                    <li class="gallery-block__item">
+                        <img class="gallery-block__item-img" src="./assets/img/gallery-img1.png" alt="Gallery">
+                    </li>
+                </div>
             </ul>
-        </div>
     </section>
     <section class="whouses-block">
         <h2 class="whouses-block__title">Who uses Frispes?</h2>
@@ -218,44 +263,48 @@
                 <button class="arrow-nav-block__next-btn"><img class="arrow-nav-block__next-btn-img" src="./assets/img/spaces-nav-next.png" alt="Next"></button>
             </div>
         </div>
-        <div class="reviews-block__list-container wrapper">
-            <ul class="reviews-block__list">
-                <li class="reviews-block__item">
-                    <p class="reviews-block__item-text">Our team has been working at frispes for almost 2 months because our office still closed. During working at frispes, we feel a new experience, we can feel working with a beautiful, modern, and comfortable space. And cozy cafe with high-speed internet  in there. Thank you for frispes and team.</p>
-                    <div class="reviews-block__item-author">
-                        <img class="reviews-block__item-author-image" src="./assets/img/reviews-author1.png" alt="Author">
-                        <div class="reviews-block__item-author-info">
-                            <p class="reviews-block__item-author-name">Pedro Ibanez</p>
-                            <p class="reviews-block__item-author-position">UI Designer at Google</p>
+        <div class="reviews-block__list-container wrapper swiper">
+            <ul class="reviews-block__list swiper-wrapper">
+                <div class="swiper-slide">
+                    <li class="reviews-block__item">
+                        <p class="reviews-block__item-text">Our team has been working at frispes for almost 2 months because our office still closed. During working at frispes, we feel a new experience, we can feel working with a beautiful, modern, and comfortable space. And cozy cafe with high-speed internet  in there. Thank you for frispes and team.</p>
+                        <div class="reviews-block__item-author">
+                            <img class="reviews-block__item-author-image" src="./assets/img/reviews-author1.png" alt="Author">
+                            <div class="reviews-block__item-author-info">
+                                <p class="reviews-block__item-author-name">Pedro Ibanez</p>
+                                <p class="reviews-block__item-author-position">UI Designer at Google</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="reviews-block__item">
-                    <p class="reviews-block__item-text">The high-speed internet at frispes was so amazing. I can get best experience when running video call with my clients. Frispes has spacious and safe parking area, that’s what i need because i used to work as freelancer for a long time.</p>
-                    <div class="reviews-block__item-author">
-                        <img class="reviews-block__item-author-image" src="./assets/img/reviews-author2.png" alt="Author">
-                        <div class="reviews-block__item-author-info">
-                            <p class="reviews-block__item-author-name">Raymond Thual</p>
-                            <p class="reviews-block__item-author-position">Professional Freelancer</p>
+                    </li>
+                </div>
+                <div class="swiper-slide">
+                    <li class="reviews-block__item">
+                        <p class="reviews-block__item-text">The high-speed internet at frispes was so amazing. I can get best experience when running video call with my clients. Frispes has spacious and safe parking area, that’s what i need because i used to work as freelancer for a long time.</p>
+                        <div class="reviews-block__item-author">
+                            <img class="reviews-block__item-author-image" src="./assets/img/reviews-author2.png" alt="Author">
+                            <div class="reviews-block__item-author-info">
+                                <p class="reviews-block__item-author-name">Raymond Thual</p>
+                                <p class="reviews-block__item-author-position">Professional Freelancer</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="reviews-block__item">
-                    <p class="reviews-block__item-text">Just three words : Frispes is Awesome!</p>
-                    <div class="reviews-block__item-author">
-                        <img class="reviews-block__item-author-image" src="./assets/img/reviews-author3.png" alt="Author">
-                        <div class="reviews-block__item-author-info">
-                            <p class="reviews-block__item-author-name">Yuli Berlian</p>
-                            <p class="reviews-block__item-author-position">IOS Dev at Tokopedia</p>
+                    </li>
+                </div>
+                <div class="swiper-slide">
+                    <li class="reviews-block__item">
+                        <p class="reviews-block__item-text">Just three words : Frispes is Awesome!</p>
+                        <div class="reviews-block__item-author">
+                            <img class="reviews-block__item-author-image" src="./assets/img/reviews-author3.png" alt="Author">
+                            <div class="reviews-block__item-author-info">
+                                <p class="reviews-block__item-author-name">Yuli Berlian</p>
+                                <p class="reviews-block__item-author-position">IOS Dev at Tokopedia</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
+                </div>
             </ul>
         </div>
         <div class="reviews-block__nav">
             <div class="reviews-block__nav-container">
-                <hr class="reviews-block__nav-line">
-                <hr class="reviews-block__nav-part">
             </div>
         </div>
     </section>
@@ -299,38 +348,48 @@
             </div>
             <ul class="news-block__list">
                 <li class="news-block__item news-block__item_main">
-                    <img class="news-block__item_main-img" src="./assets/img/news-img1.png" alt="News">
-                    <div class="news-block__item_main-content">
-                        <h3 class="news-block__item_main-title">Google I / O 2020 news update</h3>
-                        <p class="news-block__item_main-text">Out of concern for the health and safety of our developers, employees, and local communities — and in line with recent ...</p>
-                        <div class="news-block__item_main-author">
-                            <img class="news-block__item_main-author-image" src="./assets/img/news-author.png" alt="Author">
-                            <div class="news-block__item_main-author-content">
-                                <p class="news-block__item_main-author-name">Sundar pichai</p>
-                                <p class="news-block__item_main-author-position">CEO at Google</p>
+                    <a class="news-block__item-link news-block__item-link_main" href="">
+                        <img class="news-block__item_main-img" src="./assets/img/news-img1.png" alt="News">
+                        <div class="news-block__item_main-content">
+                            <h3 class="news-block__item_main-title">Google I / O 2020 news update</h3>
+                            <p class="news-block__item_main-text">Out of concern for the health and safety of our developers, employees, and local communities — and in line with recent ...</p>
+                            <div class="news-block__item_main-author">
+                                <img class="news-block__item_main-author-image" src="./assets/img/news-author.png" alt="Author">
+                                <div class="news-block__item_main-author-content">
+                                    <p class="news-block__item_main-author-name">Sundar pichai</p>
+                                    <p class="news-block__item_main-author-position">CEO at Google</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </li>
                 <li class="news-block__item">
-                    <img class="news-block__item-img" src="./assets/img/news-img2.png" alt="News">
-                    <h6 class="news-block__item-title">Minimal workspace for inspirations</h6>
-                    <p class="news-block__item-author-name">Anthony Masional</p>
+                    <a class="news-block__item-link" href="">
+                        <img class="news-block__item-img" src="./assets/img/news-img2.png" alt="News">
+                        <h6 class="news-block__item-title">Minimal workspace for inspirations</h6>
+                        <p class="news-block__item-author-name">Anthony Masional</p>
+                    </a>
                 </li>
                 <li class="news-block__item">
-                    <img class="news-block__item-img" src="./assets/img/news-img3.png" alt="News">
-                    <h6 class="news-block__item-title">Does productivity increase when working remotely ?</h6>
-                    <p class="news-block__item-author-name">Franck Martin</p>
+                    <a class="news-block__item-link" href="">
+                        <img class="news-block__item-img" src="./assets/img/news-img3.png" alt="News">
+                        <h6 class="news-block__item-title">Does productivity increase when working remotely ?</h6>
+                        <p class="news-block__item-author-name">Franck Martin</p>
+                    </a>
                 </li>
                 <li class="news-block__item">
-                    <img class="news-block__item-img" src="./assets/img/news-img4.png" alt="News">
-                    <h6 class="news-block__item-title">Morning routine to boost your mood</h6>
-                    <p class="news-block__item-author-name">Elizabeth swan</p>
+                    <a class="news-block__item-link" href="">
+                        <img class="news-block__item-img" src="./assets/img/news-img4.png" alt="News">
+                        <h6 class="news-block__item-title">Morning routine to boost your mood</h6>
+                        <p class="news-block__item-author-name">Elizabeth swan</p>
+                    </a>
                 </li>
                 <li class="news-block__item">
-                    <img class="news-block__item-img" src="./assets/img/news-img5.png" alt="News">
-                    <h6 class="news-block__item-title">5+ tips to find comfortable co&#8209;working space</h6>
-                    <p class="news-block__item-author-name">Mykola Ilschenko</p>
+                    <a class="news-block__item-link" href="">
+                        <img class="news-block__item-img" src="./assets/img/news-img5.png" alt="News">
+                        <h6 class="news-block__item-title">5+ tips to find comfortable co&#8209;working space</h6>
+                        <p class="news-block__item-author-name">Mykola Ilschenko</p>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -427,5 +486,7 @@
             </ul>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
